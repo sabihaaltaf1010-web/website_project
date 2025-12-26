@@ -1,0 +1,449 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     margin-left: 10px;
+ }
+
+
+ /* .input-search  button {
+     background-color: #009999;
+     border: none;
+     color:white;
+     cursor: pointer;
+     font-size: 1.2rem;
+    border: 2px solid black;
+     height: 50px;
+     width: 30px;
+      position: relative; */
+
+
+ .input-search button img {
+     position: absolute;
+     background-repeat: no-repeat;
+     background-position: 10px center;
+     /* padding: 10px 10px 10px 40px;  */
+     font-size: 16px;
+     /* border-radius: 5px; */
+     font-family: "Font Awesome 5 Free";
+     align-items: center;
+     justify-content: center !important;
+     background-color: #009999;
+     margin: 41px 0px 0px 865px;
+
+     color: white;
+     cursor: pointer;
+     font-size: 1.2rem;
+     border: 2px solid transparent;
+     height: 50px;
+     width: 60px;
+
+ }
+
+
+ div.left {
+     height: 60px;
+     width: 331px;
+     /* border: 2px solid black; */
+     display: inline-flex;
+     font-size: 25px;
+     font-weight: 400;
+     padding: 10px;
+
+     color: #3399CC;
+     align-items: center;
+ }
+
+ div.right {
+     height: 60px;
+     width: 1188px;
+     /* display: inline-flex; */
+
+     display: flex;
+     /* border: 2px solid black; */
+
+     justify-content: left;
+     padding-left: 750px;
+     text-decoration: none;
+     font-size: 20px;
+
+
+ }
+
+ .nav {
+     display: flex;
+     align-items: center;
+     /* justify-content: space-between;  */
+     margin-bottom: 5px;
+ }
+
+
+
+ .link {
+     text-decoration: none;
+     margin-right: 35px;
+     font-family: sans-serif;
+     box-sizing: border-box;
+     border-bottom: 4px solid transparent;
+     border-color: #33CCFF;
+     color: #666666;
+     padding: 18px 10px;
+
+ }
+
+ .main-image {
+     position: relative;
+     height: 200px;
+     width: 1520px;
+     border: 2px solid transparent;
+     background: transparent;
+     background-image: url(../images/main-image.jpg);
+     position: relative;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ div.input-search input {
+     position: absolute;
+     height: 50px;
+     width: 360px;
+     display: block;
+     margin: auto;
+     margin-top: 58px;
+     padding: 5px 15px;
+     font-size: 20px;
+     align-items: center;
+     margin-left: 506px;
+     transition: border-color .15s;
+     border: 1px solid white;
+ }
+
+
+ /* Container */
+ .container {
+     /* max-width: 1000px; */
+     margin: 0 auto;
+     background: white;
+     padding: 40px 0px 40px 0px;
+     border-radius: 10px;
+     /* box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
+ }
+
+ /* Main Heading - Exactly like image */
+ .main-heading {
+     font-size: 40px;
+     font-weight: 600;
+     color: #009999;
+     margin-bottom: 40px;
+     /* text-align: center; */
+     /* letter-spacing: -0.5px; */
+     padding-bottom: 20px;
+     border-bottom: 2px solid #eee;
+ }
+
+ /* Photos Grid - 4 images per row */
+ .photos-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 25px;
+     margin-bottom: 50px;
+ }
+
+ /* Single Photo Card */
+ .photo-card {
+     background: white;
+     /* border-radius: 6px; */
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 1px solid #eaeaea;
+     /* inset: 15px; */
+ }
+
+ /* Normal Hover Effect - Card lifts up */
+ .photo-card:hover {
+     /* transform: translateY(-10px); */
+     /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
+     /* inset: 15px; */
+     border: 2px solid white;
+
+
+
+ }
+
+ /* Image Container */
+ .image-wrapper {
+     height: 250px;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .image-wrapper img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 0.5s ease;
+     position: relative;
+ }
+
+ /* Hover Overlay - Light black with text */
+ .hover-overlay {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     /* Light black */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     padding: 20px;
+     text-align: center;
+     inset: 15px;
+     position: absolute;
+     /* margin-right: 5px;
+            margin-bottom: 5px; */
+     inset: 15px;
+     border: 2px solid white;
+     height: auto;
+     width: auto;
+ }
+
+ .photo-card:hover .hover-overlay {
+     opacity: 1;
+ }
+
+
+ /* Product Name in Overlay */
+ .product-name {
+     color: white;
+     font-size: 22px;
+     font-weight: 400;
+     margin-bottom: 10px;
+     letter-spacing: 0.5px;
+ }
+
+
+ /* Date and Views Info */
+ .photo-info {
+     padding: 20px;
+     text-align: center;
+     background: white;
+ }
+
+ .photo-date {
+     font-size: 18px;
+     font-weight: 400;
+     color: #333;
+     margin-bottom: 8px;
+ }
+
+ .photo-views {
+     font-size: 14px;
+     color: #777;
+     font-weight: 300;
+ }
+
+
+ .mid-page {
+     /* margin: 30px 0;
+     padding-bottom: 20px;
+     border-bottom: 1px solid #ddd;
+     padding-left: 25px;
+     gap: 25px; */
+     width: 100%;
+
+
+     padding: 30px 0px;
+
+ }
+
+ .mid-page .colored {
+     background-color: #009999;
+     padding: 12px 50px 14px;
+     font-weight: 400;
+     width: auto;
+     padding: 10px 20px;
+     color: #333;
+     font-weight: 500;
+     margin-right: 400px;
+     text-align: center;
+     height: 54px;
+     width: 186px;
+     padding: 12px 50px 14px;
+
+ }
+
+ .mid-page a,
+ .mid-page span {
+     display: inline-block;
+     margin-right: px;
+     padding: 8px 15px;
+     text-decoration: none;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     color: #333;
+     border-radius: 3px;
+     background-color: #EEEEEE;
+     height: 60px;
+     width: 60px;
+ }
+
+ .mid-page .n-page {
+     margin-left: 400px;
+     margin-right: 0;
+     width: auto;
+     padding: 10px 20px;
+     color: #333;
+     font-weight: 500;
+     background-color: #009999;
+     text-align: center;
+     height: 54px;
+     width: 186px;
+     padding: 12px 50px 14px;
+ }
+
+ .page-number {
+     color: #333;
+     background-color: #f8f9fa;
+     border: 1px solid #dee2e6;
+     margin: 10px;
+     padding: 30px;
+
+ }
+
+ /* .number-gap {
+            margin: 0 8px; 
+        } */
+
+
+
+ .mid-page a:hover {
+     background-color: #f0f0f0;
+ }
+
+ .mid-page .current {
+     background-color: #007bff;
+     color: white;
+     border-color: #007bff;
+     background-color: #007bff;
+     color: white;
+     border-color: #007bff;
+     font-weight: bold;
+ }
+
+ .parent-div {
+     height: 400px;
+     width: auto;
+     color: #999;
+     padding: 48px 0px 0px 6px;
+     background-color: #EEEEEE;
+     display: flex;
+     gap: 20px;
+ }
+
+
+ .div-left {
+     text-align: left;
+     padding: 0px 48px;
+     margin: 0px 0px 48px;
+     height: 173px;
+     width: 525px;
+     line-height: 1.8;
+
+ }
+
+ .div-left h1 {
+     color: #009999;
+     font-weight: 400;
+     margin-bottom: 20px;
+     font-size: 25px;
+ }
+
+ .div-right {
+     height: 173px;
+     width: 262px;
+     display: inline-block;
+     padding: 0px 48px;
+     margin: 0px 0px 48px;
+     align-items: normal;
+     justify-items: auto;
+     line-height: 1.8;
+     float: right;
+     flex: 0 0 auto;
+
+ }
+
+ .div-right h1 {
+     color: #009999;
+     font-weight: 400;
+     margin-bottom: 20px;
+     font-size: 25px;
+ }
+
+ .div-right ul {
+     list-style: none;
+ }
+
+ .social-box {
+
+     width: 44px;
+     height: 44px;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #f5f5f5;
+     transition: all 0.3s ease;
+
+ }
+
+ .s-anchor {
+     position: relative;
+     /* bottom: 20px;
+    left: 0; */
+     width: 166px;
+     text-align: right;
+     height: 8px;
+     text-align: center;
+     margin-top: 100px;
+     padding: 10px;
+     float: right;
+     justify-content: right;
+     line-height: 0;
+
+ }
+
+ .s-anchor a {
+     /* display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  overflow: 0;
+  width: 100%; */
+     display: block;
+     /* margin: 5px 0; */
+     width: 44px;
+     height: 44px;
+     background: #3b5998;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+
+ }
